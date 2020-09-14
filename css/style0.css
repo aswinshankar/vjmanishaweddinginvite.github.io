@@ -3330,3 +3330,15 @@ ul.bottom i {
   }
 
 }
+@media screen and (max-width: 800px) {
+
+  
+  #asa{display: none;}
+  #asb{display: block;}
+}
+@media screen and (max-width: 400px) {
+
+  #asa{display: none;}
+  #asb{display: block;}
+
+}
