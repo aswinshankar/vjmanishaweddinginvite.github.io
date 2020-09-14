@@ -2268,6 +2268,7 @@ ul.bottom i {
 	.hands h4 {
 		font-size: 2em;
 		margin-bottom: 11px;
+    padding-left: 0px;
 	}
 	select {
     width: 100%;
