@@ -44,7 +44,7 @@ $('#submit-form').on('click', function(e) {
 	<!--start-home-->
 	<div id="home" class="header">
 		<div class="header-top">
-			<div class="container">
+			<div class="container" id='asa'>
 				<div class="logo">
 					<a href="index.html"><h1>Our<span> Wedding</span></h1></a>
 				</div>
@@ -59,12 +59,36 @@ $('#submit-form').on('click', function(e) {
 									<li><a href="index.html">English</a></li>
 								</ul>
 				</div>
-            <!-- script-for-menu -->
+				<div class="container" id="asb">
+					<div class="row">
+						<div class='col-sm-4'>
+								<div class="logo">
+									<a href="index.html"><h1>Our<span> Wedding</span></h1></a>
+								</div>
+						</div>
+						<div class='col-sm-4'>
+								 <h6  style="font-size: 1.3rem; color:pink; padding-left:30%;"><a href="index.html">English</a></h6>
+						</div>
+					<span class="menu"> </span>
+						<div class='col-sm-4'>
+							<div class="top-menu">
+										<ul class="cl-effect-7">
+											<li><a class="active" href="முகப்பு.html">முகப்பு</a></li>
+											<!--<li><a href="story.html">Our Story</a></li> -->
+											<li><a href="விழாக்காணல்.html">விழாக்காணல்</a></li>
+											<!--<li><a href="albums.html">Our Albums</a></li>-->
+											<li><a href="திருமண இடம்.html">திருமண இடம்</a></li>
+
+											</ul>
+
+							</div>
+					 </div>
+						 <!-- script-for-menu -->
 				<script>
 				$( "span.menu" ).click(function() {
-				  $( ".top-menu" ).slideToggle( "slow", function() {
-				    // Animation complete.
-				  });
+					$( ".top-menu" ).slideToggle( "slow", function() {
+						// Animation complete.
+					});
 				});
 			</script>
 			<div class="clearfix"></div>
