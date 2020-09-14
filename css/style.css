@@ -3282,9 +3282,18 @@ ul.bottom i {
 }
 #ccc{display: block;}
 #ddd{display: none;}
+#asa{display: block;}
+#asb{display: none;}
+
 @media screen and (max-width: 800px) {
 
-  #ccc{display: none;;}
+  #ccc{display: none;}
   #ddd{display: block;}
+
+}
+@media screen and (max-width: 400px) {
+
+  #asa{display: none;}
+  #asb{display: block;}
 
 }
