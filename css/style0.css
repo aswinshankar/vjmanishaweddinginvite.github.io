@@ -3330,9 +3330,11 @@ ul.bottom i {
   }
 
 }
+#asa{display: block;}
+#asb{display: none;}
 @media screen and (max-width: 800px) {
 
-  
+
   #asa{display: none;}
   #asb{display: block;}
 }
