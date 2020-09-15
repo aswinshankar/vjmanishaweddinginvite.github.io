@@ -442,11 +442,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                     $('#myInvitation').modal('show');
 
-                    $('.play-audio').on('click', () => {
-                        document.getElementById('player').play()
-                    })
+                    // $('.play-audio').on('click', () => {
+                    //     document.getElementById('player').play()
+                    // })
 
                 },1000);
+
+                $('#myInvitation').on('hide.bs.modal', function (e) {
+                    document.getElementById('player').play()
+                });
 
             });
 
