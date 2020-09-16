@@ -7,6 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
+
 <title>Vj and Manisha</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -21,34 +22,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--/script-->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
-				});
-			});
-var $form = $('form#test-form'),
-url = 'https://script.google.com/macros/s/AKfycbx6pC2wKjEnZQkRvTGuvk6qmKn2MF4CrCQ_tIfb6CWLF9VsE80/exec'
-
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(
-    // do something
-  );
-})
-</script>
 </head>
 <body>
+    <style>
+        .couple {
+            z-index: 50;
+        }
+        #myInvitation .rsvp {
+            width: 100% !important;
+            padding: 0px !important;
+        }
+        #myInvitation .modal-body {
+            padding: 5px;
+        }
+        #myInvitation .modal-footer {
+            display:flex;
+            justify-content: center;
+        }
+        #player {
+            position: absolute;
+            left: -500px;
+            top: -500px;
+        }
+    </style>
+
 	<!--start-home-->
 	<div id="home" class="header">
 		<div class="header-top">
-			<div class="container">
+			<div class="container" id="asa">
 				<div class="logo">
 					<a href="index.html"><h1>Our<span> Wedding</span></h1></a>
 				</div>
@@ -60,23 +61,44 @@ $('#submit-form').on('click', function(e) {
 								<li><a href="ceremony.html">Ceremony</a></li>
 
 								<li><a href="contact.html">contact</a></li>
-
+                <li style="font-size: 1.3rem;"><a href="முகப்பு.html">தமிழ்</a></li>
 							</ul>
-							<li style="font-size: 1.3rem;"><a href="index(1).html">தமிழ்</a></li>
+
 				</div>
-            <!-- script-for-menu -->
-				<script>
-				$( "span.menu" ).click(function() {
-				  $( ".top-menu" ).slideToggle( "slow", function() {
-				    // Animation complete.
-				  });
-				});
-			</script>
-			<div class="clearfix"></div>
-	<!--End-top-nav-script-->
-			</div>
-		</div>
+
        </div>
+			 <div class="container" id="asb">
+				 <div class="row">
+					 <div class='col-sm-4'>
+							 <div class="logo">
+								 <a href="index.html"><h1>Our<span> Wedding</span></h1></a>
+							 </div>
+					 </div>
+					 <div class='col-sm-4'>
+								<h6  style="font-size: 1.3rem; color:pink; padding-left:30%;"><a href="முகப்பு.html">தமிழ்</a></h6>
+					 </div>
+				 <span class="menu"> </span>
+					 <div class='col-sm-4'>
+						 <div class="top-menu">
+									 <ul class="cl-effect-7">
+											 <li><a class="active" href="index.html">Home</a></li>
+
+											 <li><a href="ceremony.html">Ceremony</a></li>
+
+											 <li><a href="contact.html">contact</a></li>
+
+										 </ul>
+
+						 </div>
+					</div>
+						<!-- script-for-menu -->
+			 <script>
+			
+		 </script>
+		 <div class="clearfix"></div>
+ <!--End-top-nav-script-->
+		 </div>
+	 </div>
 	<div class="banner">
 	     	<div class="container">
 					<div  class="callbacks_container">
@@ -95,27 +117,8 @@ $('#submit-form').on('click', function(e) {
 						</ul>
 					</div>
 					<!--banner-->
-	  			<script src="js/responsiveslides.min.js"></script>
-			 <script>
-			    // You can also use "$(window).load(function() {"
-			    $(function () {
-			      // Slideshow 4
-			      $("#slider4").responsiveSlides({
-			        auto: true,
-			        pager:true,
-			        nav:false,
-			        speed: 500,
-			        namespace: "callbacks",
-			        before: function () {
-			          $('.events').append("<li>before event fired.</li>");
-			        },
-			        after: function () {
-			          $('.events').append("<li>after event fired.</li>");
-			        }
-			      });
-
-			    });
-			  </script>
+	  			
+			 
 			 <!--main-drop-->
 			 <div class="main-drop">
 			   <img src="images/hands.jpg" alt=""/>
@@ -201,27 +204,8 @@ $('#submit-form').on('click', function(e) {
 						</ul>
 					</div>
 					<!--banner-->
-	  			<script src="js/responsiveslides.min.js"></script>
-			 <script>
-			    // You can also use "$(window).load(function() {"
-			    $(function () {
-			      // Slideshow 3
-			      $("#slider3").responsiveSlides({
-			        auto: true,
-			        pager:false,
-			        nav:true,
-			        speed: 500,
-			        namespace: "callbacks",
-			        before: function () {
-			          $('.events').append("<li>before event fired.</li>");
-			        },
-			        after: function () {
-			          $('.events').append("<li>after event fired.</li>");
-			        }
-			      });
-
-			    });
-			  </script>
+	  			
+			 
 
  <!--//testimonials-->
  <!--/program-->
@@ -352,23 +336,125 @@ $('#submit-form').on('click', function(e) {
 
 		<!--//footer-->
 			<!--start-smooth-scrolling-->
-						<script type="text/javascript">
-									$(document).ready(function() {
-										/*
-										var defaults = {
-								  			containerID: 'toTop', // fading element id
-											containerHoverID: 'toTopHover', // fading element hover id
-											scrollSpeed: 1200,
-											easingType: 'linear'
-								 		};
-										*/
-
-										$().UItoTop({ easingType: 'easeOutQuart' });
-
-									});
-								</script>
+						
+	</div>
 		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
+    <div class="modal fade" id="myInvitation" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Our Wedding</h4>
+            </div>
+            <div class="modal-body">
+                <div class="rsvp" id="ccc">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdnbMZWqp9RD5olGJd9w68XyGtybk79J0knA-xktuFANb4ziQ/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+                <div class="rsvp" id="ddd">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdnbMZWqp9RD5olGJd9w68XyGtybk79J0knA-xktuFANb4ziQ/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default play-audio" data-dismiss="modal" >Close</button>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- <iframe src="silence.mp3" allow="autoplay" style="display:block" id="iframeAudio">
+    </iframe>  -->
+
+    <audio id="player" controls autoplay="true" loop >
+        <source src="Mangalyam Tantunanena (mp3cut.net).mp3" type="audio/mp3">
+    </audio>
+
+  
+
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                var $form = $('form#test-form'),
+                    url = 'https://script.google.com/macros/s/AKfycbx6pC2wKjEnZQkRvTGuvk6qmKn2MF4CrCQ_tIfb6CWLF9VsE80/exec'
+
+                    $('#submit-form').on('click', function(e) {
+                    e.preventDefault();
+                    var jqxhr = $.ajax({
+                        url: url,
+                        method: "GET",
+                        dataType: "json",
+                        data: $form.serializeObject()
+                    }).success(
+                        // do something
+                    );
+                    })
+
+                $(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+                });
+                
+                $( "span.menu" ).click(function() {
+                    $( ".top-menu" ).slideToggle( "slow", function() {
+                        // Animation complete.
+                    });
+                });
+             
+                $("#slider3").responsiveSlides({
+			        auto: true,
+			        pager:false,
+			        nav:true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+                  });
+                  
+                  $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager:true,
+			        nav:false,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+
+                $().UItoTop({ easingType: 'easeOutQuart' });
+
+                setTimeout(() => {
+                    // $('#asa').trigger('click');
+                    // document.getElementById('player').play()
+
+
+                    $('#myInvitation').modal('show');
+
+                    // $('.play-audio').on('click', () => {
+                    //     document.getElementById('player').play()
+                    // })
+
+                },1000);
+
+                $('#myInvitation').on('hide.bs.modal', function (e) {
+                    document.getElementById('player').play()
+                });
+
+            });
+
+        </script>
 
 </body>
 </html>
