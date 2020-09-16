@@ -2266,8 +2266,9 @@ ul.bottom i {
 		margin: 0 auto;
 	}
 	.hands h4 {
-		font-size: 1em;
+		font-size: 2em;
 		margin-bottom: 11px;
+    padding-left: 0px;
 	}
 	select {
     width: 100%;
@@ -3327,5 +3328,19 @@ ul.bottom i {
   #bcc{
     font-size: 3rem;
   }
+
+}
+#asa{display: block;}
+#asb{display: none;}
+@media screen and (max-width: 800px) {
+
+
+  #asa{display: none;}
+  #asb{display: block;}
+}
+@media screen and (max-width: 400px) {
+
+  #asa{display: none;}
+  #asb{display: block;}
 
 }

@@ -2315,6 +2315,9 @@ ul.bottom i {
 		font-size: 1.4em;
 		margin-bottom: 11px;
 	}
+  .aes{
+     padding-top: 5%;
+  }
 	select {
 		width: 100%;
 		font-size: 0.7em;
@@ -3282,9 +3285,19 @@ ul.bottom i {
 }
 #ccc{display: block;}
 #ddd{display: none;}
+#asa{display: block;}
+#asb{display: none;}
+
 @media screen and (max-width: 800px) {
 
-  #ccc{display: none;;}
+  #ccc{display: none;}
   #ddd{display: block;}
+  #asa{display: none;}
+  #asb{display: block;}
+}
+@media screen and (max-width: 400px) {
+
+  #asa{display: none;}
+  #asb{display: block;}
 
 }
