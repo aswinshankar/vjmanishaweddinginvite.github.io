@@ -3301,3 +3301,9 @@ ul.bottom i {
   #asb{display: block;}
 
 }
+.modal{
+    background-color :#1D2327; 
+}
+.modal h1{
+  color: white;
+}
